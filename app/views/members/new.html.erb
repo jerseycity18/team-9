@@ -1,0 +1,20 @@
+here will be our template for members
+
+<div class="padding30">
+  <h2 class="page-title">Please fill out our questionaire</h2>
+    <%= form_for @member do |f| %>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name %>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+      <%= f.label :zipcode %>
+      <%= f.text_field :zipcode %>
+      <%= f.label :interest %>
+      <%= f.text_field :interest %>
+      <%= f.label :availability %>
+      <%= f.text_field :availability %>
+      <%= f.label :communication %>
+      <%= f.text_field :communication %>
+      <%= f.submit %>
+    <% end %>
+  </div>
