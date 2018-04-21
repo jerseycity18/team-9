@@ -4,7 +4,6 @@ def score(buddy, member)
   result = 0
   %i(zipcode interest communication availability ).each do |method|
     result += buddy[method] == member[method] ? 1 : 0
-    byebug
   end
   result
 end
